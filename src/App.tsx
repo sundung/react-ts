@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 
 import Lee from './components/Lee'
+
+import State from './components/State'
 class App extends Component<any, any> {
   render() {
     return (
@@ -10,6 +12,7 @@ class App extends Component<any, any> {
           age={18}
           user={{ name: '星星', age: 18, sex: '男' }}
         />
+        <State />
       </div>
     )
   }
