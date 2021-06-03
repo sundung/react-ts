@@ -5,8 +5,8 @@ class App extends Component<any, any> {
   render() {
     return (
       <div>
-        你好
-        <Lee name={'孙志强'} />
+        <Lee name={'刘得花'} />
+        <Lee name={'刘得花'} age={18} />
       </div>
     )
   }

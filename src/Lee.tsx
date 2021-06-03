@@ -1,11 +1,16 @@
 import React, { Component } from 'react'
 
-class Lee extends Component<any, any> {
+interface Iprops {
+  name: string
+  age?: number
+}
+class Lee extends Component<Iprops, any> {
   render() {
     return (
       <div>
-        测试
         {this.props.name}
+        <hr />
+        {this.props.age}
       </div>
     )
   }
