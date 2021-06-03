@@ -16,10 +16,18 @@ export default class state extends Component<Iprops, Istate> {
   // 生命周期
   componentDidMount() {
     // 注意 state 有可能是异步的
+    // for (let i = 0; i < 100; i++) {
+    //   this.setState({
+    //     count: this.state.count + 1,
+    //   })
+    // }
+
+    // 这样写是正确的
     for (let i = 0; i < 100; i++) {
-      this.setState({
-        count: this.state.count + 1,
-      })
+      this.setState((state, props) => ({
+        // 注意 箭头函数 的 this 指向
+        count: state.count + 1,
+      }))
     }
   }
   render() {
