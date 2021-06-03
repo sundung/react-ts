@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import Lee from './Lee'
+import Lee from './components/Lee'
 class App extends Component<any, any> {
   render() {
     return (
