@@ -1,8 +1,15 @@
 import React, { Component } from 'react'
 
+interface Iusers {
+  name: string
+  sex: string
+  age: number
+}
+
 interface Iprops {
   name: string
   age?: number
+  user: Iusers
 }
 class Lee extends Component<Iprops, any> {
   render() {
@@ -11,6 +18,8 @@ class Lee extends Component<Iprops, any> {
         {this.props.name}
         <hr />
         {this.props.age}
+        <hr />
+        {this.props.user.name}
       </div>
     )
   }
