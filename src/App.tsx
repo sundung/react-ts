@@ -12,7 +12,7 @@ class App extends Component<any, any> {
           age={18}
           user={{ name: '星星', age: 18, sex: '男' }}
         />
-        <State />
+        <State name={'周星星的state'} />
       </div>
     )
   }
