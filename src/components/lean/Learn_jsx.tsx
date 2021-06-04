@@ -16,10 +16,14 @@ class LearnJsx extends Component<any,Istate> {
     //改变宽度
     change = () => {
         console.log('111');
-        this.setState({
-            width:this.state.width + 10
-        })
-    }
+        // this.setState({
+        //     width:this.state.width + 10
+        // })
+        this.setState((state,props) => ({
+            width:state.width + 10
+            // console.log(this.state)
+        }))
+    };
     render() {
         return (
             <div>
