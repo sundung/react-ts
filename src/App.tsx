@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import Lee from './components/Lee'
 
 import State from './components/State'
-import LearnJsx from "./components/Learn_jsx";
+import LearnJsx from "./components/lean/Learn_jsx";
 
 class App extends Component<any, any> {
   render() {
