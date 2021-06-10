@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 
+import { Table, Tag, Space } from 'antd';
+
+const { Column, ColumnGroup } = Table;
 interface IUser {
     id:number
     name:string
@@ -21,13 +24,20 @@ class UserList extends Component <any, Istate> {
             userList:userList
         }
     }
+
     render() {
+
         return (
             <div>
-                {/*{this.state.userList}*/}
-                {this.state.userList.map(item => (
-                    <li key={item.id}>item</li>
-                ))}
+                
+                <Table
+                    dataSource={this.state.userList}
+                    rowKey={'id'}
+                >
+                    <Table.Column title={'id'} dataIndex={'id'} />
+
+                    <Table.Column title={'用户名'} dataIndex={'name'}/>
+                </Table>
             </div>
         );
     }
