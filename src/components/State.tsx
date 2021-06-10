@@ -5,6 +5,7 @@ export default class state extends Component<any, any> {
     return (
       <div>
         <div>测试</div>
+        <div>测试1234</div>
       </div>
     )
   }
