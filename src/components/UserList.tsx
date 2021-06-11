@@ -37,14 +37,6 @@ class UserList extends Component <any, Istate> {
                     <Table.Column title={'id'} dataIndex={'id'} />
 
                     <Table.Column title={'用户名'} dataIndex={'name'}/>
-
-                    <Table.Column title={'管理'}
-                        render={(user:IUser) => (
-                            <Space>
-                                <Button type='primary'>编辑</Button>
-                                <Button type='primary' danger>删除</Button>
-                            </Space>
-                    )}/>
                 </Table>
             </div>
         );
