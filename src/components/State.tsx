@@ -33,9 +33,11 @@ export default class state extends Component<Iprops, Istate> {
   render() {
     return (
       <div>
+
         <div>{this.state.count}</div>
         <hr />
         <div>{this.props.name}</div>
+
       </div>
     )
   }
